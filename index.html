@@ -33,7 +33,7 @@
                         >Web<span class="header-nav__logo-dark">Studio</span></a
                     >
 
-                    <ul class="header-navigation list">
+                    <ul class="header-navigation__list">
                         <li class="header-navigation__item">
                             <a
                                 class="header-navigation__link current link"
@@ -62,7 +62,7 @@
                                 class="button-icon link"
                             >
                                 <svg
-                                    class="contacts-icon mail"
+                                    class="contacts-list__icon"
                                     width="16px"
                                     height="12px"
                                 >
@@ -76,7 +76,7 @@
                         <li class="contacts-list__item">
                             <a href=" +380961111111" class="button-icon link">
                                 <svg
-                                    class="contacts-icon phone"
+                                    class="contacts-list__icon"
                                     width="10px"
                                     higth="16px"
                                 >
@@ -97,10 +97,14 @@
             <!--шапка-->
             <section class="studio-hero">
                 <div class="container">
-                    <h1 class="studio-title" data-aos="fade-down">
+                    <h1 class="studio-hero__title" data-aos="fade-down">
                         Ефективне рішення для вашого бізнесу
                     </h1>
-                    <button data-modal-open type="button" class="btn-primary">
+                    <button
+                        data-modal-open
+                        type="button"
+                        class="studio-hero__button"
+                    >
                         Замовити послугу
                     </button>
                 </div>
@@ -108,14 +112,17 @@
             <!--переваги-->
             <section class="section section-advantages">
                 <div class="container">
-                    <h2 class="section-title-advantages" data-aos="fade-down">
+                    <h2
+                        class="section-title__section-advantages"
+                        data-aos="fade-down"
+                    >
                         Наші переваги
                     </h2>
                     <ul class="list-advantages list">
-                        <li class="advantages-item icon1">
-                            <div class="advantages-image icon1">
+                        <li class="list-advantages__item">
+                            <div class="list-advantages__image">
                                 <svg
-                                    class="icon-advantages antenna"
+                                    class="list-advantages__icone"
                                     width="70px"
                                     height="70px"
                                 >
@@ -130,10 +137,10 @@
                                 роботи по формуванню позиції.
                             </p>
                         </li>
-                        <li class="advantages-item icon2">
-                            <div class="advantages-image icon2">
+                        <li class="list-advantages__item">
+                            <div class="list-advantages__image">
                                 <svg
-                                    class="icon-advantages clock"
+                                    class="list-advantages__icone"
                                     width="70px"
                                     height="70px"
                                 >
@@ -148,10 +155,10 @@
                                 навчання кадрів тягне у себе.
                             </p>
                         </li>
-                        <li class="advantages-item icon3">
-                            <div class="advantages-image icon3">
+                        <li class="list-advantages__item">
+                            <div class="list-advantages__image">
                                 <svg
-                                    class="icon-advantages clock"
+                                    class="list-advantages__icone"
                                     width="70px"
                                     height="70px"
                                 >
@@ -166,10 +173,10 @@
                                 мірою зумовлює.
                             </p>
                         </li>
-                        <li class="advantages-item icon4">
-                            <div class="advantages-image icon4">
+                        <li class="list-advantages__item">
+                            <div class="list-advantages__image">
                                 <svg
-                                    class="icon-advantages clock"
+                                    class="list-advantages__icone"
                                     width="70px"
                                     height="70px"
                                 >
@@ -193,41 +200,43 @@
                     <h2 class="section-title" data-aos="fade-down">
                         Чим ми займаємося
                     </h2>
-                    <ul class="list list-work">
-                        <li class="work-item">
+                    <ul class="list-work list">
+                        <li class="list-work__item">
                             <div class="overlay-work">
                                 <img
-                                    class="work-img"
+                                    class="list-work__img"
                                     src="./images/studio/work/box1.jpg"
                                     width="370"
                                     height="294"
                                     alt="клавіатура і планшет"
                                 />
-                                <p class="text-work">Десктопні додатки</p>
+                                <p class="list-work__text">Десктопні додатки</p>
                             </div>
                         </li>
-                        <li class="work-item">
+                        <li class="list-work__item">
                             <div class="overlay-work">
                                 <img
-                                    class="work-img"
+                                    class="list-work__img"
                                     src="./images/studio/work/box2.jpg"
                                     width="370"
                                     height="294"
                                     alt="мобільний телефон і ноутбук"
                                 />
-                                <p class="text-work">Мобільні додатки</p>
+                                <p class="list-work__text">Мобільні додатки</p>
                             </div>
                         </li>
-                        <li class="work-item">
+                        <li class="list-work__item">
                             <div class="overlay-work">
                                 <img
-                                    class="work-img"
+                                    class="list-work__img"
                                     src="./images/studio/work/box3.jpg"
                                     width="370"
                                     height="294"
                                     alt="планшет у руці"
                                 />
-                                <p class="text-work">Дизайнерські рішення</p>
+                                <p class="list-work__text">
+                                    Дизайнерські рішення
+                                </p>
                             </div>
                         </li>
                     </ul>
@@ -240,20 +249,22 @@
                         Наша команда
                     </h2>
                     <ul class="list-team list">
-                        <li class="item-team">
+                        <li class="list-team__item">
                             <img
-                                class="team-img"
+                                class="list-team__img"
                                 src="./images/studio/team/photo1.jpg"
                                 width="270"
                                 height="260"
                                 alt="Игорь Демьяненко"
                             />
-                            <div class="team-text">
-                                <h3 class="list-title">Ігор Дем'яненко</h3>
-                                <p class="list-text">Product Designer</p>
-                                <ul class="contacts-team">
-                                    <li class="contacts-link-icon">
-                                        <a href="" class="icons-link link">
+                            <div class="list-team__excerpt">
+                                <h3 class="list-team__title">
+                                    Ігор Дем'яненко
+                                </h3>
+                                <p class="list-team__text">Product Designer</p>
+                                <ul class="social-icons">
+                                    <li class="social-icons__link">
+                                        <a href="" class="icon-link link">
                                             <svg
                                                 class="icon-team instagram"
                                                 width="20px"
@@ -265,8 +276,8 @@
                                             </svg>
                                         </a>
                                     </li>
-                                    <li class="contacts-link-icon">
-                                        <a href="" class="icons-link link">
+                                    <li class="social-icons__link">
+                                        <a href="" class="icon-link link">
                                             <svg
                                                 class="icon-team twitter"
                                                 width="20px"
@@ -278,8 +289,8 @@
                                             </svg>
                                         </a>
                                     </li>
-                                    <li class="contacts-link-icon">
-                                        <a href="" class="icons-link link">
+                                    <li class="social-icons__link">
+                                        <a href="" class="icon-link link">
                                             <svg
                                                 class="icon-team facebook"
                                                 width="20px"
@@ -291,10 +302,10 @@
                                             </svg>
                                         </a>
                                     </li>
-                                    <li class="contacts-link-icon">
+                                    <li class="social-icons__link">
                                         <a
                                             href=""
-                                            class="icons-link animated pulse link"
+                                            class="icon-link animated pulse link"
                                         >
                                             <svg
                                                 class="icon-team linkedin"
@@ -312,20 +323,22 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="item-team">
+                        <li class="list-team__item">
                             <img
-                                class="team-img"
+                                class="list-team__img"
                                 src="./images/studio/team/photo2.jpg"
                                 width="270"
                                 height="260"
                                 alt="Ольга Репина"
                             />
-                            <div class="team-text">
-                                <h3 class="list-title">Ольга Репіна</h3>
-                                <p class="list-text">Frontend Developer</p>
-                                <ul class="contacts-team">
-                                    <li class="contacts-link-icon">
-                                        <a href="" class="icons-link link">
+                            <div class="list-team__excerpt">
+                                <h3 class="list-team__title">Ольга Репіна</h3>
+                                <p class="list-team__text">
+                                    Frontend Developer
+                                </p>
+                                <ul class="social-icons">
+                                    <li class="social-icons__link">
+                                        <a href="" class="icon-link link">
                                             <svg
                                                 class="icon-team instagram"
                                                 width="20px"
@@ -337,8 +350,8 @@
                                             </svg>
                                         </a>
                                     </li>
-                                    <li class="contacts-link-icon">
-                                        <a href="" class="icons-link link">
+                                    <li class="social-icons__link">
+                                        <a href="" class="icon-link link">
                                             <svg
                                                 class="icon-team twitter"
                                                 width="20px"
@@ -350,8 +363,8 @@
                                             </svg>
                                         </a>
                                     </li>
-                                    <li class="contacts-link-icon">
-                                        <a href="" class="icons-link link">
+                                    <li class="social-icons__link">
+                                        <a href="" class="icon-link link">
                                             <svg
                                                 class="icon-team facebook"
                                                 width="20px"
@@ -363,8 +376,8 @@
                                             </svg>
                                         </a>
                                     </li>
-                                    <li class="contacts-link-icon">
-                                        <a href="" class="icons-link link">
+                                    <li class="social-icon__link">
+                                        <a href="" class="icon-link link">
                                             <svg
                                                 class="icon-team linkedin"
                                                 width="20px"
@@ -381,20 +394,20 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="item-team">
+                        <li class="list-team__item">
                             <img
-                                class="team-img"
+                                class="list-team__img"
                                 src="./images/studio/team/photo3.jpg"
                                 width="270"
                                 height="260"
                                 alt="Николай Тарасов"
                             />
-                            <div class="team-text">
-                                <h3 class="list-title">Микола Тарасов</h3>
-                                <p class="list-text">Marketing</p>
-                                <ul class="contacts-team">
-                                    <li class="contacts-link-icon">
-                                        <a href="" class="icons-link link">
+                            <div class="list-team__excerpt">
+                                <h3 class="list-team__title">Микола Тарасов</h3>
+                                <p class="list-team__text">Marketing</p>
+                                <ul class="social-icons">
+                                    <li class="social-icons__link">
+                                        <a href="" class="icon-link link">
                                             <svg
                                                 class="icon-team instagram"
                                                 width="20px"
@@ -406,8 +419,8 @@
                                             </svg>
                                         </a>
                                     </li>
-                                    <li class="contacts-link-icon">
-                                        <a href="" class="icons-link link">
+                                    <li class="social-icons__link">
+                                        <a href="" class="icon-link link">
                                             <svg
                                                 class="icon-team twitter"
                                                 width="20px"
@@ -419,8 +432,8 @@
                                             </svg>
                                         </a>
                                     </li>
-                                    <li class="contacts-link-icon">
-                                        <a href="" class="icons-link link">
+                                    <li class="social-icons__link">
+                                        <a href="" class="icon-link link">
                                             <svg
                                                 class="icon-team facebook"
                                                 width="20px"
@@ -432,8 +445,8 @@
                                             </svg>
                                         </a>
                                     </li>
-                                    <li class="contacts-link-icon">
-                                        <a href="" class="icons-link link">
+                                    <li class="social-icons__link">
+                                        <a href="" class="icon-link link">
                                             <svg
                                                 class="icon-team linkedin"
                                                 width="20px"
@@ -450,20 +463,22 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="item-team">
+                        <li class="list-team__item">
                             <img
-                                class="team-img"
+                                class="list-team__img"
                                 src="./images/studio/team/photo4.jpg"
                                 width="270"
                                 height="260"
                                 alt="Михаил Ермаков"
                             />
-                            <div class="team-text">
-                                <h3 class="list-title">Михайло Єрмаков</h3>
-                                <p class="list-text">UI Design</p>
-                                <ul class="contacts-team">
-                                    <li class="contacts-link-icon">
-                                        <a href="" class="icons-link link">
+                            <div class="list-team__excerpt">
+                                <h3 class="list-team__title">
+                                    Михайло Єрмаков
+                                </h3>
+                                <p class="list-team__text">UI Design</p>
+                                <ul class="social-icons">
+                                    <li class="social-icons__link">
+                                        <a href="" class="icon-link link">
                                             <svg
                                                 class="icon-team instagram"
                                                 width="20px"
@@ -475,8 +490,8 @@
                                             </svg>
                                         </a>
                                     </li>
-                                    <li class="contacts-link-icon">
-                                        <a href="" class="icons-link link">
+                                    <li class="social-icons__link">
+                                        <a href="" class="icon-link link">
                                             <svg
                                                 class="icon-team twitter"
                                                 width="20px"
@@ -488,8 +503,8 @@
                                             </svg>
                                         </a>
                                     </li>
-                                    <li class="contacts-link-icon">
-                                        <a href="" class="icons-link link">
+                                    <li class="social-icons__link">
+                                        <a href="" class="icon-link link">
                                             <svg
                                                 class="icon-team facebook"
                                                 width="20px"
@@ -501,8 +516,8 @@
                                             </svg>
                                         </a>
                                     </li>
-                                    <li class="contacts-link-icon">
-                                        <a href="" class="icons-link link">
+                                    <li class="social-icons__link">
+                                        <a href="" class="icon-link link">
                                             <svg
                                                 class="icon-team linkedin"
                                                 width="20px"
@@ -528,8 +543,8 @@
                         Постійні клієнти
                     </h2>
                     <ul class="clients-list list">
-                        <li class="clients-item logo1">
-                            <a href="" class="clients-link link">
+                        <li class="clients-list__item">
+                            <a href="" class="clients-list__link link">
                                 <svg
                                     class="icon-clients"
                                     width="106px"
@@ -541,8 +556,8 @@
                                 </svg>
                             </a>
                         </li>
-                        <li class="clients-item logo1">
-                            <a href="" class="clients-link link">
+                        <li class="clients-list__item">
+                            <a href="" class="clients-list__link link">
                                 <svg
                                     class="icon-clients"
                                     width="106px"
@@ -554,8 +569,8 @@
                                 </svg>
                             </a>
                         </li>
-                        <li class="clients-item logo1">
-                            <a href="" class="clients-link link">
+                        <li class="clients-list__item">
+                            <a href="" class="clients-list__link link">
                                 <svg
                                     class="icon-clients"
                                     width="106px"
@@ -567,8 +582,8 @@
                                 </svg>
                             </a>
                         </li>
-                        <li class="clients-item logo1">
-                            <a href="" class="clients-link link">
+                        <li class="clients-list__item">
+                            <a href="" class="clients-list__link link">
                                 <svg
                                     class="icon-clients"
                                     width="106px"
@@ -580,8 +595,8 @@
                                 </svg>
                             </a>
                         </li>
-                        <li class="clients-item logo1">
-                            <a href="" class="clients-link link">
+                        <li class="clients-list__item">
+                            <a href="" class="clients-list__link link">
                                 <svg
                                     class="icon-clients"
                                     width="106px"
@@ -593,8 +608,8 @@
                                 </svg>
                             </a>
                         </li>
-                        <li class="clients-item logo1">
-                            <a href="" class="clients-link link">
+                        <li class="clients-list__item">
+                            <a href="" class="clients-list__link link">
                                 <svg
                                     class="icon-clients"
                                     width="106px"
