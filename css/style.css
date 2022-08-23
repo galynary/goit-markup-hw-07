@@ -73,7 +73,7 @@ body {
 }
 
 /*-logo--*/
-.header-nav__logo {
+.logo {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
@@ -86,7 +86,7 @@ body {
 .logo-header {
     margin-right: 93px;
 }
-.header-nav__logo-dark {
+.logo__logo-dark {
     color: #000;
 }
 .logo-white {
@@ -648,6 +648,12 @@ body {
     background-color: rgba(255, 255, 255, 0.1);
     cursor: pointer;
     color: #fff;
+}
+.social-icons__list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
 }
 /*--студія--*/
 .section-team {
