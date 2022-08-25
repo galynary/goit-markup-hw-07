@@ -21,44 +21,49 @@
             href="https://unpkg.com/aos@2.3.1/dist/aos.css"
             rel="stylesheet"
         />
-        <link rel="stylesheet" href="icomoon/style.css" />
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="./css/main.min.css" />
     </head>
     <body>
         <!--хедер-->
         <header class="header">
             <div class="container">
                 <div class="header-nav">
-                    <a href="" class="logo logo-header link"
-                        >Web<span class="logo-dark">Studio</span></a
+                    <a href="" class="logo header__logo link"
+                        >Web<span class="logo__logo-dark">Studio</span></a
                     >
-                    <ul class="header-navigation list">
-                        <li class="list-item">
-                            <a class="header-link link" href="index.html"
+
+                    <ul class="header-nav__menu list">
+                        <li class="header-navigation__item">
+                            <a
+                                class="header-navigation__link link"
+                                href="index.html"
                                 >Студія</a
                             >
                         </li>
-                        <li class="list-item">
+                        <li class="header-navigation__item">
                             <a
-                                class="header-link current link"
+                                class="header-navigation__link current link"
                                 href="portfolio.html"
                                 >Портфоліо</a
                             >
                         </li>
-                        <li class="list-item">
-                            <a class="header-link link" href="">Контакти</a>
+                        <li class="header-navigation__item">
+                            <a class="header-navigation__link link" href=""
+                                >Контакти</a
+                            >
                         </li>
                     </ul>
 
-                    <ul class="contacts-list list">
-                        <li class="contacts-item">
+                    <ul class="header-nav__contacts list">
+                        <li class="contacts-list__item">
                             <a
                                 href="info@devstudio.com"
-                                class="button-icon link"
+                                class="contacts-list__link link"
                             >
                                 <svg
-                                    class="contacts-icon mail"
+                                    class="contacts-list__icon"
                                     width="16px"
                                     height="12px"
                                 >
@@ -69,10 +74,13 @@
                                 info@devstudio.com
                             </a>
                         </li>
-                        <li class="contacts-item">
-                            <a href=" +380961111111" class="button-icon link">
+                        <li class="contacts-list__item">
+                            <a
+                                href=" +380961111111"
+                                class="contacts-list__link link"
+                            >
                                 <svg
-                                    class="contacts-icon phone"
+                                    class="contacts-list__icon"
                                     width="10px"
                                     higth="16px"
                                 >
@@ -102,17 +110,17 @@
                         <button type="button" class="button">Маркетин</button>
                     </ul>
                     <ul class="portfolio-list list">
-                        <li class="portfolio-list-item">
-                            <a href="" class="portfolio-link link">
-                                <div class="portfolio-animate">
+                        <li class="portfolio-list__item">
+                            <a href="" class="portfolio__link link">
+                                <div class="portfolio-overlay">
                                     <img
-                                        class="portfolio-img"
+                                        class="portfolio-overlay__img"
                                         src="./images/portfolio/img1.jpg"
                                         width="370"
                                         height="294"
                                         alt="Веб-сайт"
                                     />
-                                    <p class="text-animate span">
+                                    <p class="portfolio-overlay__text">
                                         После Bootcamp вы станете независимым
                                         full stack разработчиком, спрос на
                                         которого на рынке IT растет с каждым
@@ -122,22 +130,24 @@
                                     </p>
                                 </div>
                                 <div class="wrap-portfolio-text">
-                                    <h2 class="portfolio-title">Технокряк</h2>
-                                    <p class="portfolio-text">Веб-сайт</p>
+                                    <h2 class="wrap-portfolio__title">
+                                        Технокряк
+                                    </h2>
+                                    <p class="wrap-portfolio__text">Веб-сайт</p>
                                 </div>
                             </a>
                         </li>
-                        <li class="portfolio-list-item">
-                            <a href="" class="portfolio-link link">
-                                <div class="portfolio-animate">
+                        <li class="portfolio-list__item">
+                            <a href="" class="portfolio__link link">
+                                <div class="portfolio-overlay">
                                     <img
-                                        class="portfolio-img"
+                                        class="portfolio-overlay__img"
                                         src="./images/portfolio/img2.jpg"
                                         width="370"
                                         height="294"
                                         alt="Постер New Orlean vs Golden Star"
                                     />
-                                    <p class="text-animate">
+                                    <p class="portfolio-overlay__text">
                                         После Bootcamp вы станете независимым
                                         full stack разработчиком, спрос на
                                         которого на рынке IT растет с каждым
@@ -147,24 +157,24 @@
                                     </p>
                                 </div>
                                 <div class="wrap-portfolio-text">
-                                    <h2 class="portfolio-title">
+                                    <h2 class="wrap-portfolio__title">
                                         Постер New Orlean vs Golden Star
                                     </h2>
-                                    <p class="portfolio-text">Дизайн</p>
+                                    <p class="wrap-portfolio__text">Дизайн</p>
                                 </div>
                             </a>
                         </li>
-                        <li class="portfolio-list-item">
-                            <a href="" class="portfolio-link link">
-                                <div class="portfolio-animate">
+                        <li class="portfolio-list__item">
+                            <a href="" class="portfolio__link link">
+                                <div class="portfolio-overlay">
                                     <img
-                                        class="portfolio-img"
+                                        class="portfolio-overlay__img"
                                         src="./images/portfolio/img3.jpg"
                                         width="370"
                                         height="294"
                                         alt="Ресторан Seafood"
                                     />
-                                    <p class="text-animate">
+                                    <p class="portfolio-overlay__text">
                                         После Bootcamp вы станете независимым
                                         full stack разработчиком, спрос на
                                         которого на рынке IT растет с каждым
@@ -174,24 +184,24 @@
                                     </p>
                                 </div>
                                 <div class="wrap-portfolio-text">
-                                    <h2 class="portfolio-title">
+                                    <h2 class="wrap-portfolio__title">
                                         Ресторан Seafood
                                     </h2>
-                                    <p class="portfolio-text">Додаток</p>
+                                    <p class="wrap-portfolio__text">Додаток</p>
                                 </div>
                             </a>
                         </li>
-                        <li class="portfolio-list-item">
-                            <a href="" class="portfolio-link link">
-                                <div class="portfolio-animate">
+                        <li class="portfolio-list__item">
+                            <a href="" class="portfolio__link link">
+                                <div class="portfolio-overlay">
                                     <img
-                                        class="portfolio-img"
+                                        class="portfolio-overlay__img"
                                         src="./images/portfolio/img4.jpg"
                                         width="370"
                                         height="294"
                                         alt="Проєкт Prime"
                                     />
-                                    <p class="text-animate">
+                                    <p class="portfolio-overlay__text">
                                         После Bootcamp вы станете независимым
                                         full stack разработчиком, спрос на
                                         которого на рынке IT растет с каждым
@@ -201,26 +211,26 @@
                                     </p>
                                 </div>
                                 <div class="wrap-portfolio-text">
-                                    <h2 class="portfolio-title">
+                                    <h2 class="wrap-portfolio__title">
                                         Проєкт Prime
                                     </h2>
-                                    <p class="portfolio-text">
+                                    <p class="wrap-portfolio__text">
                                         Product Designer
                                     </p>
                                 </div>
                             </a>
                         </li>
-                        <li class="portfolio-list-item">
-                            <a href="" class="portfolio-link link">
-                                <div class="portfolio-animate">
+                        <li class="portfolio-list__item">
+                            <a href="" class="portfolio__link link">
+                                <div class="portfolio-overlay">
                                     <img
-                                        class="portfolio-img"
+                                        class="portfolio-overlay__img"
                                         src="./images/portfolio/img5.jpg"
                                         width="370"
                                         height="294"
                                         alt="Проєкт Boxes"
                                     />
-                                    <p class="text-animate">
+                                    <p class="portfolio-overlay__text">
                                         После Bootcamp вы станете независимым
                                         full stack разработчиком, спрос на
                                         которого на рынке IT растет с каждым
@@ -230,24 +240,24 @@
                                     </p>
                                 </div>
                                 <div class="wrap-portfolio-text">
-                                    <h2 class="portfolio-title">
+                                    <h2 class="wrap-portfolio__title">
                                         Проект Boxes
                                     </h2>
-                                    <p class="portfolio-text">Додаток</p>
+                                    <p class="wrap-portfolio__text">Додаток</p>
                                 </div>
                             </a>
                         </li>
-                        <li class="portfolio-list-item">
-                            <a href="" class="portfolio-link link">
-                                <div class="portfolio-animate">
+                        <li class="portfolio-list__item">
+                            <a href="" class="portfolio__link link">
+                                <div class="portfolio-overlay">
                                     <img
-                                        class="portfolio-img"
+                                        class="portfolio-overlay__img"
                                         src="./images/portfolio/img6.jpg"
                                         width="370"
                                         height="294"
                                         alt="Веб-сайт"
                                     />
-                                    <p class="text-animate">
+                                    <p class="portfolio-overlay__text">
                                         После Bootcamp вы станете независимым
                                         full stack разработчиком, спрос на
                                         которого на рынке IT растет с каждым
@@ -257,24 +267,24 @@
                                     </p>
                                 </div>
                                 <div class="wrap-portfolio-text">
-                                    <h2 class="portfolio-title">
+                                    <h2 class="wrap-portfolio__title">
                                         Inspiration has no Borders
                                     </h2>
-                                    <p class="portfolio-text">Веб-сайт</p>
+                                    <p class="wrap-portfolio__text">Веб-сайт</p>
                                 </div>
                             </a>
                         </li>
-                        <li class="portfolio-list-item">
-                            <a href="" class="portfolio-link link">
-                                <div class="portfolio-animate">
+                        <li class="portfolio-list__item">
+                            <a href="" class="portfolio__link link">
+                                <div class="portfolio-overlay">
                                     <img
-                                        class="portfolio-img"
+                                        class="portfolio-overlay__img"
                                         src="./images/portfolio/img7.jpg"
                                         width="370"
                                         height="294"
                                         alt="Видання Limited Edition"
                                     />
-                                    <p class="text-animate">
+                                    <p class="portfolio-overlay__text">
                                         После Bootcamp вы станете независимым
                                         full stack разработчиком, спрос на
                                         которого на рынке IT растет с каждым
@@ -284,24 +294,24 @@
                                     </p>
                                 </div>
                                 <div class="wrap-portfolio-text">
-                                    <h2 class="portfolio-title">
+                                    <h2 class="wrap-portfolio__title">
                                         Видання Limited Edition
                                     </h2>
-                                    <p class="portfolio-text">Дизайн</p>
+                                    <p class="wrap-portfolio__text">Дизайн</p>
                                 </div>
                             </a>
                         </li>
-                        <li class="portfolio-list-item">
-                            <a href="" class="portfolio-link link">
-                                <div class="portfolio-animate">
+                        <li class="portfolio-list__item">
+                            <a href="" class="portfolio__link link">
+                                <div class="portfolio-overlay">
                                     <img
-                                        class="portfolio-img"
+                                        class="portfolio-overlay-img"
                                         src="./images/portfolio/img8.jpg"
                                         width="370"
                                         height="294"
                                         alt="Проект LAB"
                                     />
-                                    <p class="text-animate">
+                                    <p class="portfolio-overlay__text">
                                         После Bootcamp вы станете независимым
                                         full stack разработчиком, спрос на
                                         которого на рынке IT растет с каждым
@@ -311,22 +321,26 @@
                                     </p>
                                 </div>
                                 <div class="wrap-portfolio-text">
-                                    <h2 class="portfolio-title">Проект LAB</h2>
-                                    <p class="portfolio-text">Маркетинг</p>
+                                    <h2 class="wrap-portfolio__title">
+                                        Проект LAB
+                                    </h2>
+                                    <p class="wrap-portfolio__text">
+                                        Маркетинг
+                                    </p>
                                 </div>
                             </a>
                         </li>
-                        <li class="portfolio-list-item">
-                            <a href="" class="portfolio-link link">
-                                <div class="portfolio-animate">
+                        <li class="portfolio-list__item">
+                            <a href="" class="portfolio__link link">
+                                <div class="portfolio-overlay">
                                     <img
-                                        class="portfolio-img"
+                                        class="portfolio-overlay__img"
                                         src="./images/portfolio/img9.jpg"
                                         width="370"
                                         height="294"
                                         alt="Мобільний додаток"
                                     />
-                                    <p class="text-animate">
+                                    <p class="portfolio-overlay__text">
                                         После Bootcamp вы станете независимым
                                         full stack разработчиком, спрос на
                                         которого на рынке IT растет с каждым
@@ -336,10 +350,10 @@
                                     </p>
                                 </div>
                                 <div class="wrap-portfolio-text">
-                                    <h2 class="portfolio-title">
+                                    <h2 class="wrap-portfolio__title">
                                         Growing Business
                                     </h2>
-                                    <p class="portfolio-text">Додаток</p>
+                                    <p class="wrap-portfolio__text">Додаток</p>
                                 </div>
                             </a>
                         </li>
@@ -350,28 +364,28 @@
         <!--подвал-->
         <footer class="footer">
             <div class="container">
-                <div class="footer-iner">
-                    <div class="footter-address">
-                        <a class="logo logo-foter link" href="">
-                            Web<span class="logo-white">Studio</span></a
+                <div class="footer__inner">
+                    <div class="footter__address">
+                        <a class="logo footer__logo link" href="">
+                            Web<span class="logo__logo-white">Studio</span></a
                         >
                         <address>
                             <ul class="address-list list">
-                                <li class="address-item">
+                                <li class="address-list__item">
                                     <a
                                         class="address-link address link"
                                         href="https://https://goo.gl/maps/Vq8eRykNfUg5gmFL7"
                                         >м. Київ, пр-т Лесі Українки, 26</a
                                     >
                                 </li>
-                                <li class="address-item">
+                                <li class="address-list__item">
                                     <a
                                         class="address-link link"
                                         href="mailto:info@example.com"
                                         >info@example.com</a
                                     >
                                 </li>
-                                <li class="address-item">
+                                <li class="address-list__item">
                                     <a
                                         class="address-link link"
                                         href="tel:+380961111111"
@@ -381,13 +395,16 @@
                             </ul>
                         </address>
                     </div>
-                    <div class="footer-icons">
-                        <h3 class="footer-title">приєднуйтесь</h3>
-                        <ul class="contacts-team">
-                            <li class="contacts-link-icon">
-                                <a href="" class="icons-link-footer link">
+                    <div class="social-icons__footer">
+                        <h3 class="social-icons__title">приєднуйтесь</h3>
+                        <ul class="social-icons__list">
+                            <li class="social-icons__link">
+                                <a
+                                    href=""
+                                    class="social-icons__icon-footer link"
+                                >
                                     <svg
-                                        class="icon-team instagram"
+                                        class="icon-footer"
                                         width="20px"
                                         height="20px"
                                     >
@@ -397,10 +414,13 @@
                                     </svg>
                                 </a>
                             </li>
-                            <li class="contacts-link-icon">
-                                <a href="" class="icons-link-footer link">
+                            <li class="social-icons__link">
+                                <a
+                                    href=""
+                                    class="social-icons__icon-footer link"
+                                >
                                     <svg
-                                        class="icon-team twitter"
+                                        class="icon-footer"
                                         width="20px"
                                         height="20px"
                                     >
@@ -410,10 +430,13 @@
                                     </svg>
                                 </a>
                             </li>
-                            <li class="contacts-link-icon">
-                                <a href="" class="icons-link-footer link">
+                            <li class="social-icons__link">
+                                <a
+                                    href=""
+                                    class="social-icons__icon-footer link"
+                                >
                                     <svg
-                                        class="icon-team facebook"
+                                        class="icon-footer"
                                         width="20px"
                                         height="20px"
                                     >
@@ -423,10 +446,13 @@
                                     </svg>
                                 </a>
                             </li>
-                            <li class="contacts-link-icon">
-                                <a href="" class="icons-link-footer link">
+                            <li class="social-icons__link">
+                                <a
+                                    href=""
+                                    class="social-icons__icon-footer link"
+                                >
                                     <svg
-                                        class="icon-team linkedin"
+                                        class="icon-footer"
                                         width="20px"
                                         height="20px"
                                     >
@@ -440,20 +466,22 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="subscription">
-                        <h3 class="footer-title">Підпишіться на розсилку</h3>
-                        <div class="footer-form">
+                    <form class="footer-form">
+                        <h3 class="footer-form__title">
+                            Підпишіться на розсилку
+                        </h3>
+                        <div class="footer-form__text">
                             <input
-                                class="input-footer"
+                                class="footer-form__input"
                                 type="mail"
                                 name="mail"
-                                id="mail"
+                                id="mail-footer"
                                 required
                                 minlength="6"
                                 maxlength="12"
                                 placeholder="E-mail"
                             />
-                            <button type="submit" class="buttton-form-footer">
+                            <button type="submit" class="footer-form__button">
                                 Підписатися
                                 <svg
                                     class="icon-telegram"
@@ -466,14 +494,16 @@
                                 </svg>
                             </button>
                         </div>
-                    </div>
+                    </form>
                 </div>
             </div>
         </footer>
         <script src="./js/modal.js"></script>
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
-            AOS.init()
+            AOS.init({
+                duration: 1000,
+            })
         </script>
     </body>
 </html>
