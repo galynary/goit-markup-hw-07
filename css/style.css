@@ -345,6 +345,9 @@ body {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
         transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.footer-form__input:focus {
+    border-color: #fff;
+}
 .error {
     font-weight: 400;
     font-size: 12px;
