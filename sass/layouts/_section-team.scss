@@ -3,7 +3,7 @@
 	line-height: 1.16;
 	text-align: center;
 	letter-spacing: 0.03em;
-	color: var(--priamary-color);
+	color: $priamary-color;
 	margin-top: 0px;
 	margin-bottom: 50px;
 }
@@ -26,8 +26,8 @@
 }
 
 .list-team__title {
-	font-size: var(--title-font-size);
-	color: var(--priamary-color);
+	font-size: $title-font-size;
+	color: $priamary-color;
 	line-height: 1.17;
 	font-weight: 500;
 	letter-spacing: 0.06em;
@@ -35,8 +35,8 @@
 }
 
 .list-team__text {
-	font-size: var(--title-font-size);
-	color: var(--text-color);
+	font-size: $title-font-size;
+	color: $text-color;
 	line-height: 1.17;
 	letter-spacing: 0.03em;
 	margin-bottom: 16px;
@@ -60,12 +60,12 @@
 	background-color: rgba(255, 255, 255, 0.1);
 	cursor: pointer;
 	color: #afb1b8;
-	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-		transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: background-color $transion,
+		transform $transion;
 
 	&:focus,
 	&:hover {
-		background-color: var(--accent-color);
+		background-color: $accent-color;
 		color: #fff;
 		transform: scale(1.05);
 	}

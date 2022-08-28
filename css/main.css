@@ -1,11 +1,264 @@
-:root {
-  --accent-color: #2196f3;
-  --primary-white-color: #fff;
-  --title-font-size: 16px;
-  --text-font-size: 14px;
-  --priamary-color: #212121;
-  --text-color: #757575;
-  --transion: 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
+/*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
+/*
+Document
+========
+*/
+/**
+Use a better box model (opinionated).
+*/
+*,
+::before,
+::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/**
+1. Correct the line height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+3. Use a more readable tab size (opinionated).
+*/
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -moz-tab-size: 4;
+  /* 3 */
+  -o-tab-size: 4;
+     tab-size: 4;
+  /* 3 */
+}
+
+/*
+Sections
+========
+*/
+/**
+1. Remove the margin in all browsers.
+2. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+*/
+body {
+  margin: 0;
+  /* 1 */
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  /* 2 */
+}
+
+/*
+Grouping content
+================
+*/
+/**
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+*/
+hr {
+  height: 0;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+}
+
+/*
+Text-level semantics
+====================
+*/
+/**
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+abbr[title] {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+/**
+Add the correct font weight in Edge and Safari.
+*/
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+2. Correct the odd 'em' font sizing in all browsers.
+*/
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+Add the correct font size in all browsers.
+*/
+small {
+  font-size: 80%;
+}
+
+/**
+Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
+*/
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+Tabular data
+============
+*/
+/**
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+*/
+table {
+  text-indent: 0;
+  /* 1 */
+  border-color: inherit;
+  /* 2 */
+}
+
+/*
+Forms
+=====
+*/
+/**
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+*/
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+button,
+select {
+  text-transform: none;
+}
+
+/**
+Correct the inability to style clickable types in iOS and Safari.
+*/
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+Remove the inner border and padding in Firefox.
+*/
+::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+Restore the focus styles unset by the previous rule.
+*/
+:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+Remove the additional ':invalid' styles in Firefox.
+See: https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737
+*/
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/**
+Remove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers.
+*/
+legend {
+  padding: 0;
+}
+
+/**
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+progress {
+  vertical-align: baseline;
+}
+
+/**
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+[type=search] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to 'inherit' in Safari.
+*/
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/*
+Interactive
+===========
+*/
+/*
+Add the correct display in Chrome and Safari.
+*/
+summary {
+  display: list-item;
 }
 
 *,
@@ -139,10 +392,10 @@ button {
   display: inline-block;
   border: 1px solid transparent;
   overflow: hidden;
-  -webkit-transition: backround-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: backround-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: backround-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: backround-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: backround-color 250ms linear cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
+  transition: backround-color 250ms linear cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
+  transition: backround-color 250ms linear cubic-bezier(0.4, 0, 0.2, 1), transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
+  transition: backround-color 250ms linear cubic-bezier(0.4, 0, 0.2, 1), transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer {
@@ -173,7 +426,7 @@ button {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: var(--accent-color);
+  color: #2196f3;
   display: inline-block;
 }
 
@@ -420,7 +673,7 @@ button {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  background: #ffffff;
+  background: #fff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -428,7 +681,7 @@ button {
   height: auto;
   padding: 40px;
   margin: 0 auto;
-  background-color: #ffffff;
+  background-color: #fff;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -436,12 +689,13 @@ button {
       -ms-flex-pack: center;
           justify-content: center;
   z-index: 2;
-  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: -webkit-transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/*--modal__button--*/
 .modal__button {
   position: absolute;
   cursor: pointer;
@@ -453,15 +707,10 @@ button {
   background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  -webkit-transition: backround-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: backround-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: backround-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: backround-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.btn-modal:hover + .icon-close,
-.btn-modal:focus + .icon-close {
-  color: var(--accent-color);
+  -webkit-transition: backround-color 250ms linear cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
+  transition: backround-color 250ms linear cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
+  transition: backround-color 250ms linear cubic-bezier(0.4, 0, 0.2, 1), transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
+  transition: backround-color 250ms linear cubic-bezier(0.4, 0, 0.2, 1), transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal__icon-close {
@@ -481,65 +730,16 @@ button {
   background-origin: border-box;
   background-repeat: no-repeat;
   background-position: center;
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: 250ms linear cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms linear cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms linear cubic-bezier(0.4, 0, 0.2, 1), transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms linear cubic-bezier(0.4, 0, 0.2, 1), transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.icon-close:hover,
-.icon-close:focus {
+.modal__icon-close:hover, .modal__icon-close:focus {
   fill: #2196f3;
 }
 
-.form-textarea:focus {
-  outline: 1px solid rgb(33, 150, 243);
-  border: transparent;
-}
-
-.backdrop.is-hidden {
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
-}
-
-.backdrop {
-  position: fixed;
-  opacity: 1;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.js-speaker-form {
-  display: block;
-  position: relative;
-  width: 100%;
-  margin: 0 auto;
-}
-
-.modal__title-form {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
-  margin-bottom: 12px;
-}
-
-.form-list {
-  display: block;
-  width: 448px;
-  margin: 0 auto;
-  margin-bottom: 20px;
-}
-
+/*--form__item--*/
 .form__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -550,7 +750,6 @@ button {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-
 .form__item:not(:last-child) {
   margin-bottom: 12px;
 }
@@ -565,16 +764,8 @@ button {
   text-align: left;
 }
 
-.input:focus {
-  border-color: rgb(33, 150, 243);
-}
-
 .form__input {
   position: relative;
-}
-
-.input:focus + .form__icon-input {
-  fill: rgb(33, 150, 243);
 }
 
 .input {
@@ -584,8 +775,11 @@ button {
   padding-left: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: border-color 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
+}
+.input:focus {
+  border-color: #2196f3;
 }
 
 .icon-label {
@@ -599,82 +793,13 @@ button {
   display: inline-block;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: fill 250ms linear cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms linear cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms linear cubic-bezier(0.4, 0, 0.2, 1), transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms linear cubic-bezier(0.4, 0, 0.2, 1), transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.error {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-  color: rgb(239, 154, 154);
-}
-
-.input:focus {
-  border-color: rgb(33, 150, 243);
-}
-
-.icon {
-  position: absolute;
-  fill: rgb(33, 33, 33);
-}
-
-.form__textarea {
-  width: 100%;
-  height: 120px;
-  padding: 12px 16px;
-  resize: none;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.form__textarea:focus {
-  border-color: rgb(33, 150, 243);
-}
-
-.form__textarea::-webkit-input-placeholder {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
-}
-
-.form__textarea::-moz-placeholder {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
-}
-
-.form__textarea:-ms-input-placeholder {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
-}
-
-.form__textarea::-ms-input-placeholder {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
-}
-
-.form__textarea::placeholder {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
+.input:focus + .form__icon-input {
+  fill: #2196f3;
 }
 
 .buttton-form:hover {
@@ -683,6 +808,7 @@ button {
           transform: scale(1.03);
 }
 
+/*--checkbox--*/
 .form__checkbox {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -711,10 +837,9 @@ button {
   border: 2px solid #212121;
   margin-right: 7px;
   border-radius: 2px;
-  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: background-color 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .checkbox__input:checked + .checkbox__icon {
   background-color: #2196f3;
   border-color: transparent;
@@ -783,53 +908,15 @@ button {
   display: block;
   border: 1px solid transparent;
   overflow: hidden;
-  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: background-color 250ms linear cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms linear cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms linear cubic-bezier(0.4, 0, 0.2, 1), transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms linear cubic-bezier(0.4, 0, 0.2, 1), transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms linear cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.form__button:hover {
+.form__button:hover, .form__button:focus {
   background-color: #176eb5;
   -webkit-transform: scale(1.03);
           transform: scale(1.03);
-}
-
-.header,
-.header-nav,
-.header-nav__menu,
-.header-nav__contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 80px;
-}
-
-.list {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.link {
-  text-decoration: none;
-}
-
-.contacts-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.header {
-  background-color: #ffffff;
-  border-bottom: 1px solid #ececec;
 }
 
 .header-nav {
@@ -845,24 +932,8 @@ button {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: var(--accent-color);
+  color: #2196f3;
   display: inline-block;
-}
-
-.header__logo {
-  margin-right: 93px;
-}
-
-.logo__logo-dark {
-  color: #000;
-}
-
-.logo__logo-white {
-  color: #fff;
-}
-
-.header-navigation__item + .header-navigation__item {
-  margin-left: 50px;
 }
 
 .header-navigation__link {
@@ -870,16 +941,16 @@ button {
   position: relative;
   padding: 21px 0px;
   font-weight: 500;
-  font-size: var(--text-font-size);
+  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--priamary-color);
+  color: #212121;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .current {
-  color: var(--accent-color);
+  color: #2196f3;
 }
 
 .current::after {
@@ -887,46 +958,21 @@ button {
   display: block;
   width: 100%;
   height: 4px;
-  background-color: var(--accent-color);
+  background-color: #2196f3;
   position: absolute;
   bottom: -11px;
   left: 0;
   border-radius: 2px;
-  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-nav__contacts {
-  margin-left: auto;
-}
-
-.contacts-list__item + .contacts-list__item {
-  margin-left: 50px;
-}
-
-.contact-mail {
-  color: var(--text-color);
-  fill: var(--text-color);
-  padding: 21px 0px;
-}
-
-.contacts-list__item:hover,
-.contacts-list__item:focus {
-  fill: var(--accent-color);
-  padding: 21px 0px;
+  -webkit-transition: opacity 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-list__link:hover,
 .contacts-list__link:focus {
-  fill: var(--accent-color);
-  color: var(--accent-color);
+  fill: #2196f3;
+  color: #2196f3;
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
-}
-
-.phone {
-  width: 10px;
-  height: 16px;
 }
 
 .contacts-list__link {
@@ -940,18 +986,18 @@ button {
       -ms-flex-pack: center;
           justify-content: center;
   font-weight: 500;
-  font-size: var(--text-font-size);
+  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   background-color: transparent;
   cursor: pointer;
-  color: var(--text-color);
-  fill: var(--text-color);
+  color: #757575;
+  fill: #757575;
   padding: 15px 0px;
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: color 250ms linear cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms linear cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1), color 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1), color 250ms linear cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-list__icon {
@@ -962,20 +1008,22 @@ button {
 .contacts-link {
   display: block;
   padding: 21px 0px;
-  font-size: var(--text-font-size);
+  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   font-weight: 500;
-  color: var(--text-color);
-  fill: var(--text-color);
-  -webkit-transition: var(--icon-link);
-  transition: var(--icon-link);
+  color: #757575;
+  fill: #757575;
+  -webkit-transition: color 250ms linear cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms linear cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1), color 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1), color 250ms linear cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-link:hover,
 .contacts-link:focus {
-  color: var(--accent-color);
-  fill: var(--accent-color);
+  color: #2196f3;
+  fill: #2196f3;
 }
 
 .contacts-link:not(:last-child) {
@@ -1047,9 +1095,6 @@ button {
   height: 80px;
 }
 
-/*.header-nav {
-	display: flex;
-}*/
 .logo {
   font-family: "Raleway";
   font-style: normal;
@@ -1057,7 +1102,7 @@ button {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: var(--accent-color);
+  color: #2196f3;
   display: inline-block;
 }
 
@@ -1078,15 +1123,15 @@ button {
   position: relative;
   padding: 21px 0px;
   font-weight: 500;
-  font-size: var(--text-font-size);
+  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--priamary-color);
+  color: #212121;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-navigation__link--current {
-  color: var(--accent-color);
+  color: #2196f3;
 }
 .header-navigation__link--current::after {
   content: "";
@@ -1102,22 +1147,6 @@ button {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/*.header-navigation__link--current {
-	color: var(--accent-color);
-}
-
-.current::after {
-	content: '';
-	display: block;
-	width: 100%;
-	height: 4px;
-	background-color: var(--accent-color);
-	position: absolute;
-	bottom: -11px;
-	left: 0;
-	border-radius: 2px;
-	transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}*/
 .header-nav__contacts {
   margin-left: auto;
 }
@@ -1127,14 +1156,14 @@ button {
 }
 
 .contact-mail {
-  color: var(--text-color);
-  fill: var(--text-color);
+  color: #757575;
+  fill: #757575;
   padding: 21px 0px;
 }
 
 .contacts-list__item:hover,
 .contacts-list__item:focus {
-  fill: var(--accent-color);
+  fill: #2196f3;
   padding: 21px 0px;
 }
 
@@ -1154,22 +1183,22 @@ button {
       -ms-flex-pack: center;
           justify-content: center;
   font-weight: 500;
-  font-size: var(--text-font-size);
+  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   background-color: transparent;
   cursor: pointer;
-  color: var(--text-color);
-  fill: var(--text-color);
+  color: #757575;
+  fill: #757575;
   padding: 15px 0px;
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: color 250ms linear cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms linear cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1), color 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1), color 250ms linear cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts-list__link:hover, .contacts-list__link:focus {
-  fill: var(--accent-color);
-  color: var(--accent-color);
+  fill: #2196f3;
+  color: #2196f3;
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
 }
@@ -1182,18 +1211,18 @@ button {
 .contacts-link {
   display: block;
   padding: 21px 0px;
-  font-size: var(--text-font-size);
+  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   font-weight: 500;
-  color: var(--text-color);
-  fill: var(--text-color);
-  -webkit-transition: var(--icon-link);
-  transition: var(--icon-link);
+  color: #757575;
+  fill: #757575;
+  -webkit-transition: 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts-link:hover, .contacts-link:focus {
-  color: var(--accent-color);
-  fill: var(--accent-color);
+  color: #2196f3;
+  fill: #2196f3;
 }
 .contacts-link:not(:last-child) {
   margin-right: 50px;
@@ -1246,10 +1275,10 @@ button {
   display: inline-block;
   border: 1px solid transparent;
   overflow: hidden;
-  -webkit-transition: backround-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: backround-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: backround-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: backround-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: backround-color 250ms linear cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
+  transition: backround-color 250ms linear cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
+  transition: backround-color 250ms linear cubic-bezier(0.4, 0, 0.2, 1), transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
+  transition: backround-color 250ms linear cubic-bezier(0.4, 0, 0.2, 1), transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
 }
 .studio-hero__button:hover {
   background-color: #176eb5;
@@ -1264,7 +1293,7 @@ button {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  background: #ffffff;
+  background: #fff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -1272,7 +1301,7 @@ button {
   height: auto;
   padding: 40px;
   margin: 0 auto;
-  background-color: #ffffff;
+  background-color: #fff;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1280,10 +1309,10 @@ button {
       -ms-flex-pack: center;
           justify-content: center;
   z-index: 2;
-  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: -webkit-transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal__button {
@@ -1297,16 +1326,12 @@ button {
   background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  -webkit-transition: backround-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: backround-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: backround-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: backround-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: backround-color 250ms linear cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
+  transition: backround-color 250ms linear cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
+  transition: backround-color 250ms linear cubic-bezier(0.4, 0, 0.2, 1), transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
+  transition: backround-color 250ms linear cubic-bezier(0.4, 0, 0.2, 1), transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/*.modal__button:hover+.modal__icon-close,
-.modal__button:focus+.modal__icon-close {
-	color: var(--accent-color);
-}*/
 .modal__icon-close {
   position: absolute;
   -webkit-box-align: center;
@@ -1324,10 +1349,10 @@ button {
   background-origin: border-box;
   background-repeat: no-repeat;
   background-position: center;
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: 250ms linear cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms linear cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms linear cubic-bezier(0.4, 0, 0.2, 1), transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms linear cubic-bezier(0.4, 0, 0.2, 1), transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal__icon-close:hover, .modal__icon-close:focus {
   fill: #2196f3;
@@ -1352,8 +1377,8 @@ button {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   z-index: 1;
-  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: opacity 250ms linear cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms linear cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .js-speaker-form {
@@ -1394,9 +1419,6 @@ button {
   margin-bottom: 12px;
 }
 
-/*.form__item:not(:last-child) {
-	margin-bottom: 12px;
-}*/
 .form__label {
   margin-bottom: 6px;
   font-weight: 400;
@@ -1408,16 +1430,13 @@ button {
 }
 
 .input:focus {
-  border-color: rgb(33, 150, 243);
+  border-color: #2196f3;
 }
 
 .form__input {
   position: relative;
 }
 
-/*.input:focus+.form__icon-input {
-	fill: rgba(33, 150, 243);
-}*/
 .input {
   width: 100%;
   height: 100%;
@@ -1425,11 +1444,11 @@ button {
   padding-left: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: border-color 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
 }
 .input:focus {
-  border-color: rgb(33, 150, 243);
+  border-color: #2196f3;
 }
 
 .icon-label {
@@ -1443,18 +1462,15 @@ button {
   display: inline-block;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: fill 250ms linear cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms linear cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms linear cubic-bezier(0.4, 0, 0.2, 1), transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms linear cubic-bezier(0.4, 0, 0.2, 1), transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
 }
 .input:focus + .form__icon-input {
-  fill: rgb(33, 150, 243);
+  fill: #2196f3;
 }
 
-/*.footer-form__input:focus {
-	border-color: #fff;
-}*/
 .error {
   font-weight: 400;
   font-size: 12px;
@@ -1475,11 +1491,11 @@ button {
   resize: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: border-color 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form__textarea:focus {
-  border-color: rgb(33, 150, 243);
+  border-color: #2196f3;
 }
 .form__textarea::-webkit-input-placeholder {
   font-weight: 400;
@@ -1551,8 +1567,8 @@ button {
   border: 2px solid #212121;
   margin-right: 7px;
   border-radius: 2px;
-  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: background-color 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
 }
 .checkbox__input:checked + .checkbox__icon {
   background-color: #2196f3;
@@ -1564,15 +1580,6 @@ button {
   background-position: center;
 }
 
-/*.checkbox__input:checked+.checkbox__icon {
-	background-color: #2196f3;
-	border-color: transparent;
-	background-image: url('../images/icons.svg/icon\ check.svg');
-	background-size: contain;
-	background-origin: border-box;
-	background-repeat: no-repeat;
-	background-position: center;
-}*/
 .checkbox__label {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1631,12 +1638,12 @@ button {
   display: block;
   border: 1px solid transparent;
   overflow: hidden;
-  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: background-color 250ms linear cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms linear cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms linear cubic-bezier(0.4, 0, 0.2, 1), transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms linear cubic-bezier(0.4, 0, 0.2, 1), transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms linear cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form__button:hover {
+.form__button:hover, .form__button:focus {
   background-color: #176eb5;
   -webkit-transform: scale(1.03);
           transform: scale(1.03);
@@ -1651,7 +1658,7 @@ button {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--priamary-color);
+  color: #212121;
   margin-top: 0px;
   margin-bottom: 50px;
 }
@@ -1695,19 +1702,19 @@ button {
   margin-bottom: 30px;
 }
 .list-advantages__title {
-  font-size: var(--text-font-size);
+  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--priamary-color);
+  color: #212121;
   margin-top: 0px;
   margin-bottom: 10px;
 }
 .list-advantages__text {
-  font-size: var(--text-font-size);
+  font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-  color: var(--text-color);
+  color: #757575;
 }
 
 .section-title {
@@ -1715,7 +1722,7 @@ button {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--priamary-color);
+  color: #212121;
   margin-top: 0px;
   margin-bottom: 50px;
 }
@@ -1774,7 +1781,7 @@ button {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--priamary-color);
+  color: #212121;
   margin-top: 0px;
   margin-bottom: 50px;
 }
@@ -1800,8 +1807,8 @@ button {
 }
 
 .list-team__title {
-  font-size: var(--title-font-size);
-  color: var(--priamary-color);
+  font-size: 16px;
+  color: #212121;
   line-height: 1.17;
   font-weight: 500;
   letter-spacing: 0.06em;
@@ -1809,8 +1816,8 @@ button {
 }
 
 .list-team__text {
-  font-size: var(--title-font-size);
-  color: var(--text-color);
+  font-size: 16px;
+  color: #757575;
   line-height: 1.17;
   letter-spacing: 0.03em;
   margin-bottom: 16px;
@@ -1839,13 +1846,13 @@ button {
   background-color: rgba(255, 255, 255, 0.1);
   cursor: pointer;
   color: #afb1b8;
-  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: background-color 250ms linear cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms linear cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms linear cubic-bezier(0.4, 0, 0.2, 1), transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms linear cubic-bezier(0.4, 0, 0.2, 1), transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-icons__icon-team:focus, .social-icons__icon-team:hover {
-  background-color: var(--accent-color);
+  background-color: #2196f3;
   color: #fff;
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
@@ -1872,7 +1879,7 @@ button {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--priamary-color);
+  color: #212121;
   margin-top: 0px;
   margin-bottom: 50px;
 }
@@ -1904,12 +1911,12 @@ button {
   border-radius: 4px;
   cursor: pointer;
   color: #afb1b8;
-  -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: border-color 250ms linear cubic-bezier(0.4, 0, 0.2, 1), color 250ms linear cubic-bezier(0.4, 0, 0.2, 1), fill 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms linear cubic-bezier(0.4, 0, 0.2, 1), color 250ms linear cubic-bezier(0.4, 0, 0.2, 1), fill 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-list__link:hover, .clients-list__link:focus {
-  border-color: var(--accent-color);
-  color: var(--accent-color);
+  border-color: #2196f3;
+  color: #2196f3;
 }
 
 .clients-list__icon {
@@ -1918,7 +1925,7 @@ button {
 }
 
 .title-portfolio {
-  color: var(--priamary-color);
+  color: #212121;
   font-size: 32px;
   text-align: center;
   margin-top: 0px;
@@ -1938,12 +1945,12 @@ button {
 }
 
 .button {
-  font-size: var(--title-font-size);
+  font-size: 16px;
   font-family: "Roboto";
   text-align: center;
   line-height: 1.6;
   letter-spacing: 0.03em;
-  color: var(--priamary-color);
+  color: #212121;
   font-weight: 500;
   border: 1px solid transparent;
   padding: 6px 22px;
@@ -1951,14 +1958,14 @@ button {
   border-radius: 4px;
   text-align: center;
   cursor: pointer;
-  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: background-color 250ms linear cubic-bezier(0.4, 0, 0.2, 1), color 250ms linear cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms linear cubic-bezier(0.4, 0, 0.2, 1), color 250ms linear cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms linear cubic-bezier(0.4, 0, 0.2, 1), color 250ms linear cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms linear cubic-bezier(0.4, 0, 0.2, 1), color 250ms linear cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms linear cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button:hover, .button:focus {
-  color: var(--primary-white-color);
-  background-color: var(--accent-color);
+  color: #fff;
+  background-color: #2196f3;
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
@@ -1978,34 +1985,6 @@ button {
   gap: 30px;
 }
 
-.img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-.wrap-portfolio {
-  padding: 24px;
-  margin-top: 0px;
-  border-top: none;
-  border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
-}
-.wrap-portfolio__title {
-  color: var(--priamary-color);
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  margin-bottom: 4px;
-}
-.wrap-portfolio__text {
-  font-size: var(--title-font-size);
-  color: var(--text-color);
-  line-height: 1.87;
-  letter-spacing: 0.03em;
-}
-
 .portfolio-list__item {
   background: #ffffff;
   position: relative;
@@ -2023,7 +2002,38 @@ button {
   position: relative;
   overflow: hidden;
 }
-.portfolio-overlay .portfolio-overlay__img {
+
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.wrap-portfolio-text {
+  padding: 24px;
+  margin-top: 0px;
+  border-top: none;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+}
+
+.wrap-portfolio__title {
+  color: #212121;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  margin-bottom: 4px;
+}
+
+.wrap-portfolio__text {
+  font-size: 16px;
+  color: #757575;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+}
+
+.portfolio-overlay__img {
   display: block;
   max-width: 100%;
   height: auto;
@@ -2038,7 +2048,8 @@ button {
   -webkit-transition-delay: 0s;
           transition-delay: 0s;
 }
-.portfolio-overlay .portfolio-overlay__text {
+
+.portfolio-overlay__text {
   background-color: rgba(33, 150, 243, 0.9);
   position: absolute;
   font-family: "roboto";
@@ -2058,7 +2069,7 @@ button {
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
 }
-.portfolio__link:hover .portfolio-overlay .portfolio-overlay__text, .portfolio__link:focus .portfolio-overlay .portfolio-overlay__text {
+.portfolio__link:hover .portfolio-overlay__text, .portfolio__link:focus .portfolio-overlay__text {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
@@ -2091,7 +2102,7 @@ button {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: var(--accent-color);
+  color: #2196f3;
   display: inline-block;
 }
 
@@ -2115,11 +2126,11 @@ button {
 }
 
 .address-list__link.address {
-  color: #ffffff;
+  color: #fff;
 }
 
 .address-list__link {
-  font-size: var(--text-font-size);
+  font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
@@ -2145,7 +2156,7 @@ button {
   color: #fff;
   margin-bottom: 20px;
   font-size: 14px;
-  font-size: var(--text-font-size);
+  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -2183,7 +2194,7 @@ button {
 
 .social-icons__icon-footer:focus,
 .social-icons__icon-footer:hover {
-  background-color: var(--accent-color);
+  background-color: #2196f3;
   color: #fff;
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
@@ -2206,10 +2217,10 @@ button {
   background-color: rgba(255, 255, 255, 0.1);
   cursor: pointer;
   color: #fff;
-  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: background-color 250ms linear cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms linear cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms linear cubic-bezier(0.4, 0, 0.2, 1), transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms linear cubic-bezier(0.4, 0, 0.2, 1), transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icons-link-footer:focus .icon-team,
@@ -2234,10 +2245,10 @@ button {
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: transparent;
-  -webkit-transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: border-color 250ms linear cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms linear cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms linear cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms linear cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms linear cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-form__button {
@@ -2269,10 +2280,10 @@ button {
   overflow: hidden;
   margin-left: 12px;
   background-position: right;
-  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: background-color 250ms linear cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms linear cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms linear cubic-bezier(0.4, 0, 0.2, 1), transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms linear cubic-bezier(0.4, 0, 0.2, 1), transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms 250ms linear cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-form__button:hover {
