@@ -42,11 +42,11 @@
 }
 
 .address-list__link.address {
-	color: #ffffff;
+	color: $primary-white-color;
 }
 
 .address-list__link {
-	font-size: var(--text-font-size);
+	font-size: $text-font-size;
 	line-height: 1.7;
 	letter-spacing: 0.03em;
 	color: rgba(255, 255, 255, 0.6);
@@ -68,14 +68,10 @@
 	color: #fff;
 	margin-bottom: 20px;
 	font-size: 14px;
-	font-size: var(--text-font-size);
+	font-size: $text-font-size;
 	line-height: 1.14;
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
-}
-
-.footer-form__input:focus {
-	border-color: #fff;
 }
 
 .icons-link-footer {
@@ -100,7 +96,7 @@
 
 .social-icons__icon-footer:focus,
 .social-icons__icon-footer:hover {
-	background-color: var(--accent-color);
+	background-color: $accent-color;
 	color: #fff;
 	transform: scale(1.05);
 }
@@ -116,8 +112,8 @@
 	background-color: rgba(255, 255, 255, 0.1);
 	cursor: pointer;
 	color: #fff;
-	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-		transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: background-color $transion,
+		transform $transion;
 }
 
 .icons-link-footer:focus .icon-team,
@@ -139,15 +135,15 @@
 	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 	border-radius: 4px;
 	background-color: transparent;
-	transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1),
-		box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: border-color $transion,
+		box-shadow $transion;
 }
 
 .footer-form__button {
 	position: relative;
 	width: 200px;
 	height: 50px;
-	background: #2196f3;
+	background: $accent-color;
 	box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
 	border-radius: 4px;
 	font-size: 16px;
@@ -165,9 +161,9 @@
 	overflow: hidden;
 	margin-left: 12px;
 	background-position: right;
-	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-		transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
-		box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: background-color $transion,
+		transform $transion,
+		box-shadow 250ms $transion;
 }
 
 .footer-form__button:hover {

@@ -9,7 +9,7 @@
 
 .header,
 .header-nav,
-.header-nav__menu,
+.site-nav,
 .header-nav__contacts {
 	display: flex;
 	align-items: center;
@@ -36,11 +36,11 @@
 	color: #000;
 }
 
-.header-navigation__item+.header-navigation__item {
+.site-nav__item+.site-nav__item {
 	margin-left: 50px;
 }
 
-.header-navigation__link {
+.site-nav__link {
 	display: block;
 	position: relative;
 	padding: 21px 0px;
@@ -50,26 +50,28 @@
 	letter-spacing: 0.02em;
 	color: $priamary-color;
 	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 
-	&--current {
-		color: $accent-color;
+.site-nav__link--current {
+	color: $accent-color;
 
 
-		&::after {
-			content: '';
-			display: block;
-			width: 100%;
-			height: 4px;
-			background-color: var(--accent-color);
-			position: absolute;
-			bottom: -11px;
-			left: 0;
-			border-radius: 2px;
-			transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-		}
+	&::after {
+		content: '';
+		display: block;
+		width: 100%;
+		height: 4px;
+		background-color: $accent-color;
+		position: absolute;
+		bottom: -11px;
+		left: 0;
+		border-radius: 2px;
+		transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 	}
 }
+
+
 
 
 
@@ -79,7 +81,7 @@
 	margin-left: auto;
 }
 
-.contacts-list__item+.contacts-list__item {
+.contacts__item+.contacts__item {
 	margin-left: 50px;
 }
 
@@ -89,8 +91,8 @@
 	padding: 21px 0px;
 }
 
-.contacts-list__item:hover,
-.contacts-list__item:focus {
+.contacts__item:hover,
+.contactst__item:focus {
 	fill: $accent-color;
 	padding: 21px 0px;
 }
@@ -101,7 +103,7 @@
 	height: 16px;
 }
 
-.contacts-list__link {
+.contacts__link {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -125,21 +127,26 @@
 	}
 }
 
-.contacts-list__icon {
+.contacts__icon {
 	margin-right: 10px;
 	color: currentColor;
 }
 
-.contacts-link {
-	display: block;
+.contacts__link {
 	padding: 21px 0px;
 	font-size: $text-font-size;
 	line-height: 1.14;
 	letter-spacing: 0.02em;
 	font-weight: 500;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: transparent;
+	cursor: pointer;
+	padding: 15px 0px;
 	color: $text-color;
 	fill: $text-color;
-	transition: $transion;
+	transition: transform $transion, color $transion ;
 
 	&:hover,
 	&:focus {

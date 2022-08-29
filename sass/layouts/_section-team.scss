@@ -8,7 +8,7 @@
 	margin-bottom: 50px;
 }
 
-.section-team {
+.section--gray-background {
 	background-color: #f5f4fa;
 }
 
@@ -42,14 +42,14 @@
 	margin-bottom: 16px;
 }
 
-.list-team__excerpt {
+.list-team__box {
 	text-align: center;
 	padding-top: 30px;
 	padding-bottom: 28px;
 }
 
 
-.social-icons__icon-team {
+.social-icons__link {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -71,7 +71,7 @@
 	}
 }
 
-.icon-team {
+.social-icons__icon {
 	fill: currentColor;
 	cursor: pointer;
 }
